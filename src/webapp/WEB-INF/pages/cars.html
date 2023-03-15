@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars List</title>
+</head>
+<body>
+<div>
+    <th:block th:each="mss : ${catalog}">
+        <h1 th:text="${mss}"/>
+    </th:block>
+</div>
+<h3>
+    <br>
+    <a href="/cars?count=1">Display a list of 1 car</a>
+    <br>
+    <a href="/cars?count=2">Display a list of 2 cars</a>
+    <br>
+    <a href="/cars?count=3">Display a list of 3 cars</a>
+    <br>
+    <a href="/cars?count=4">Display a list of 4 cars</a>
+    <br>
+    <a href="/cars?count=5">Display a list of 5 cars</a>
+    <br>
+</h3>
+<h2>
+    <a href="/">Return home page</a>
+</h2>
+</body>
+</html>
